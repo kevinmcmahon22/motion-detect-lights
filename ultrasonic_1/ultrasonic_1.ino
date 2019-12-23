@@ -1,5 +1,4 @@
 // First attempt at ultrasonic sensor 12/19
-// changes
 
 int trigPin = 11;
 int echoPin = 12;
@@ -26,6 +25,8 @@ void loop() {
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
+
+  //limit ultrasonic readings to 10/sec
   
   //duration is sending of ping to recpetion after bouncing
   duration = pulseIn(echoPin, HIGH);
