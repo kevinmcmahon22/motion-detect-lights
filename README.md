@@ -1,6 +1,5 @@
 # Motion Detecting Room Lights
-Turn on LED when motion is detected with ultrasonic sensor
-Turn off after a set time has passed
+Turn on LED lights when an object moves close to the ultrasonic sensor, then turn the lights off again after a set timeout period.
 
 ### Parts
 * Arduino uno
